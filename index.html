@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.ico">
         
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
         <link href="public/css/style.css" rel="stylesheet">
         
@@ -16,12 +16,10 @@
     <body>
         
         <!-- Inicio navbar Bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
             <div class="container-fluid">
-              <!-- Brand/logo on the left -->
               <a class="navbar-brand" href="#">
-                <!-- You can insert your logo or brand name here -->
-                Brand Logo
+              Nombre <img src="public/img/python.png" alt="Python icon" width="30" height="30" />
               </a>
           
               <!-- Responsive Navbar Toggler -->
@@ -38,6 +36,12 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
                   <!-- Add more navigation items on the right if needed -->
                 </ul>
               </div>
@@ -46,36 +50,94 @@
           
         <!-- Fin navbar bootstrap -->
         
+        <header>
+                
+            <div id="newsCarousel" class="carousel slide carousel-custom carousel-custom-size carousel-custom-align">
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 4"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href=""><img src="public/img/carousel (1).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p></a>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href=""><img src="public/img/carousel (2).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
+                        </div>
+                    </div>
+                  
+                    <div class="carousel-item">
+                        <a href=""><img src="public/img/carousel (3).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p></a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href=""><img src="public/img/carousel (4).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the fourth slide.</p></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </header>
+
         <div class="container">
 
-            <header>
-                <h1>AAAAAAAAAAAAAAAAAAAAA</h1>
-                <p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-            </header>
+            
 
             <section>
                 <p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
                 <p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
             
-                <nav>
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link">Previous</a></li>
-                        <li class="page-item"><a href="index.html" class="page-link">1</a></li>
-                        <li class="page-item"><a class="page-link">2</a></li>
-                        <li class="page-item"><a class="page-link">3</a></li>
-                        <li class="page-item"><span class="page-link">...</span></li>
-                        <li class="page-item"><a class="page-link">10</a></li>
-                        <li class="page-item"><a class="page-link">Next</a></li>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
                     </ul>
-                </nav>
+                  </nav>
 
             </section>
             
             <!-- Inicio barra lateral -->
             <aside>
-                <!-- Inicio menú en acordeon Bootstrap (primer elemento descubierto) -->
-                tampoco hace falta usar todo verdaL
-                <!-- Fin menú desplegable en acordeon -->
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u3T7hmLthUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
             </aside>
             <!-- Fin barra lateral -->
             
@@ -88,9 +150,9 @@
             <p class="foot"><a href="#top">Contacto</a></p>
         </footer>    
 
-        <!-- Add the Bootstrap 5 JS and Popper.js script links here, if needed -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <!-- Bootstrap 5 JS and Popper.js script links-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 
     </body>
 </html>

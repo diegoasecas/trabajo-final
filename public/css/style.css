@@ -1,23 +1,25 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
-.card-img-top {
-    margin-bottom: 10px;
-}
-
-.card {
-    width: 12rem;
-}
-/* 
 @media (min-width: 800px) {
-    .navbar {
-        padding-left: 100px;
-        padding-right: 100px;
+    .navbar-custom {
+        padding-left: 5%;
+        padding-right: 5%;
     }    
-} */
+}
 
+@media (min-width: 850px) {
+    .carousel-custom-size {
+        width: 850px;
+    }    
+
+    .carousel-custom-align {
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
+
+.carousel-custom a {
+    text-decoration: none;
+    color:white;
+}
 
 .container {
     background-color: yellow;
@@ -29,8 +31,21 @@ body {
 }
 
 header {
-    background-color: blue;
+    
+
+
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
+.header-image {
+    background-image: url(“cat.jpg”);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    }
 
 section {
     background-color: brown;
@@ -43,6 +58,13 @@ footer {
 
 aside {
     background-color: chocolate;
+}
+
+@media (max-width: 560px) {
+    iframe {
+        width: 100%;
+        height: 315px;
+    }
 }
 
 .foot {margin-bottom: 0;}
