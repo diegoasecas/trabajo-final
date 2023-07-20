@@ -1,3 +1,48 @@
-.card-img-top {margin-bottom: 10px;}
+*{
+    padding: 0px;
+    margin: 0px;
+}
 
-header {margin-top: 50px;}
+.card-img-top {
+    margin-bottom: 10px;
+}
+
+.card {
+    width: 12rem;
+}
+/* 
+@media (min-width: 800px) {
+    .navbar {
+        padding-left: 100px;
+        padding-right: 100px;
+    }    
+} */
+
+
+.container {
+    background-color: yellow;
+    width: 90%;
+}
+
+body {
+    background-color: green;
+}
+
+header {
+    background-color: blue;
+}
+
+section {
+    background-color: brown;
+}
+
+footer {
+    text-align: center;
+    background-color: blueviolet;
+}
+
+aside {
+    background-color: chocolate;
+}
+
+.foot {margin-bottom: 0;}
