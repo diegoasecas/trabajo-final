@@ -31,12 +31,11 @@ body {
 }
 
 header {
-    
-
-
     background-color: black;
     padding-left: 5%;
     padding-right: 5%;
+
+    margin-top: 56px;
 }
 
 .header-image {
@@ -60,11 +59,47 @@ aside {
     background-color: chocolate;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 800px) {
     iframe {
         width: 100%;
-        height: 315px;
     }
 }
 
 .foot {margin-bottom: 0;}
+
+
+/* responsive grid */
+.grid-container {
+    
+    padding: 10px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-gap: 10px; /* Adjust the gap between the items */
+}
+  
+.big-block {
+    grid-column: 1 / span 2; /* Span the big block across two columns */
+    background-color: #ffcc00; /* Yellow background for the big block */
+    padding: 10px;
+}
+  
+  .small-block {
+    background-color: #33cc33; /* Green background for the small blocks */
+    padding: 10px;
+}
+  
+@media (min-width: 850px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+    }
+
+    .big-block {
+        grid-column: span 2; /* The big block will span two columns */
+    }
+
+    .small-block {
+  grid-column: span 1; /* Each small block will span one column */
+    }
+} 
