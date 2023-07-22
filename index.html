@@ -15,44 +15,39 @@
     
     <body>
         
-        <!-- Inicio navbar Bootstrap -->
+        <!-- inicio navbar bootstrap -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-custom">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-              Nombre <img src="public/img/python.png" alt="Python icon" width="30" height="30" />
-              </a>
+                <a class="navbar-brand" href="#">Nombre <img src="public/img/python.png" alt="Python icon" width="30" height="30" /></a>
           
-              <!-- Responsive Navbar Toggler -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
           
-              <!-- Navigation items -->
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <!-- Add more navigation items on the right if needed -->
-                </ul>
-              </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-          
-        <!-- Fin navbar bootstrap -->
+        </nav>
+        <!-- fin navbar bootstrap -->
         
         <header>
                 
-            <div id="newsCarousel" class="carousel slide carousel-custom carousel-custom-size carousel-custom-align">
+            <!-- inicio carousel bootstrap -->
+            <div id="newsCarousel" class="carousel slide carousel-custom carousel-custom-size carousel-custom-align" data-bs-ride="carousel">
                 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -63,38 +58,47 @@
                 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href=""><img src="public/img/carousel (1).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p></a>
-                        </div>
+
+                        <a href="">
+                            <img src="public/img/carousel (1).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
+                            <div class="carousel-caption">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </a>
                     </div>
                     
                     <div class="carousel-item">
-                        <a href=""><img src="public/img/carousel (2).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
-                        </div>
+                        <a href="">
+                            <img src="public/img/carousel (2).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
+                            <div class="carousel-caption">
+                                <h5>Second slide label</h5>
+                                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </a>
                     </div>
                   
                     <div class="carousel-item">
-                        <a href=""><img src="public/img/carousel (3).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p></a>
-                        </div>
+                        <a href="">
+                            <img src="public/img/carousel (3).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
+                            <div class="carousel-caption">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="carousel-item">
-                        <a href=""><img src="public/img/carousel (4).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the fourth slide.</p></a>
-                        </div>
+                        <a href="">
+                            <img src="public/img/carousel (4).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
+                            <div class="carousel-caption">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the fourth slide.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -105,21 +109,16 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-            
-
+            <!-- Inicio carousel Bootstrap -->
 
         </header>
 
         <div class="container">
 
-            
-
             <section>
                 <div class="grid-container">
-                    <div class="big-block">
+                    <div class="main-block">
                         
-
                         <div class="card text-bg-dark">
                             <img src="public/img/python.png" class="card-img" alt="...">
                             <div class="card-img-overlay">
@@ -127,12 +126,11 @@
                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                               <p class="card-text"><small>Last updated 3 mins ago</small></p>
                             </div>
-                          </div>
+                        </div>
 
-
-                        
                     </div>
-                    <div class="small-block">
+                    
+                    <div class="side-block">
                         
 
                         <div class="card mb-3">
@@ -145,11 +143,9 @@
                           </div>
 
 
-
                     </div>
-                    <div class="small-block">
+                    <div class="side-block">
                         
-
 
                         <div class="card mb-3">
                             <img src="..." class="card-img-top" alt="...">
@@ -159,26 +155,32 @@
                               <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                             </div>
                           </div>
-
 
 
                     </div>
                   </div>
 
+                <!-- inicio paginación bootstrap -->
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-end">
-                      <li class="page-item disabled">
-                        <a class="page-link">Previous</a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
                     </ul>
-                  </nav>
-
+                </nav>
+                <!-- inicio navbar bootstrap -->
             </section>
             
             <!-- Inicio barra lateral -->

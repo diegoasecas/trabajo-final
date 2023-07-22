@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Grid Layout</title>
+  <style>/* Base styles for both blocks */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* Adjust the gap as needed */
+    }
+    
+    .main-block, .aside-block {
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    /* Styles for larger screens */
+    @media screen and (min-width: 768px) {
+      .main-block {
+        flex-basis: 70%; /* 80% of the container width */
+      }
+    
+      .aside-block {
+        flex-basis: 20%; /* 20% of the container width */
+      }
+    }
+    
+    /* Styles for smaller screens */
+    @media screen and (max-width: 767px) {
+      .main-block, .aside-block {
+        flex-basis: 100%; /* Both blocks take the full width of the container */
+      }
+    }
+    
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-block">Main Block</div>
+        <div class="aside-block">Aside Block</div>
+      </div>
+      
+      
+      
+</body>
+</html>

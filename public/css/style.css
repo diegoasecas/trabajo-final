@@ -24,6 +24,9 @@
 .container {
     background-color: yellow;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 body {
@@ -34,17 +37,8 @@ header {
     background-color: black;
     padding-left: 5%;
     padding-right: 5%;
-
     margin-top: 56px;
 }
-
-.header-image {
-    background-image: url(“cat.jpg”);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-    }
 
 section {
     background-color: brown;
@@ -59,7 +53,28 @@ aside {
     background-color: chocolate;
 }
 
-@media (max-width: 800px) {
+/* Styles for larger screens */
+@media (min-width: 1000px) {
+    section {
+      width: 75%;
+    }
+  
+    aside {
+      width: 25%; /* 20% of the container width */
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+  
+/* Styles for smaller screens */
+@media (max-width: 1000px) {
+    section, aside {
+      flex-basis: 100%; /* Both blocks take the full width of the container */
+    }
+
     iframe {
         width: 100%;
     }
@@ -70,36 +85,32 @@ aside {
 
 /* responsive grid */
 .grid-container {
-    
-    padding: 10px;
-    
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-    grid-gap: 10px; /* Adjust the gap between the items */
+    grid-gap: 0; /* Adjust the gap between the items */
 }
   
-.big-block {
+.main-block {
     grid-column: 1 / span 2; /* Span the big block across two columns */
     background-color: #ffcc00; /* Yellow background for the big block */
-    padding: 10px;
 }
   
-  .small-block {
+.side-block {
     background-color: #33cc33; /* Green background for the small blocks */
-    padding: 10px;
 }
   
-@media (min-width: 850px) {
+@media (min-width: 1100px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
     }
 
-    .big-block {
+    .main-block {
         grid-column: span 2; /* The big block will span two columns */
     }
 
-    .small-block {
-  grid-column: span 1; /* Each small block will span one column */
+    .side-block {
+        grid-column: span 1; /* Each small block will span one column */
     }
 } 
+
