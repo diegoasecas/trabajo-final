@@ -1,17 +1,21 @@
 .navbar-custom {
         padding-left: 3%;
         padding-right: 3%;
-}    
-
-@media (min-width: 850px) {
-    .carousel-custom-size {
-        width: 850px;
     }    
 
-    .carousel-custom-align {
+.title {
+    font-size: larger;
+    font-weight:600;
+    margin: 0;
+}
+
+
+@media (min-width: 800px) {
+    .carousel-custom {
+        width: 850px;
         margin-left: auto;
         margin-right: auto;
-    }    
+    }
 }
 
 .carousel-custom a {
@@ -21,7 +25,7 @@
 
 .container {
     background-color: yellow;
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -32,17 +36,18 @@ body {
 }
 
 header {
-    background-color: black;
+    background-image: url(_pattern.png);
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 56px;
 }
 
-section {
+main {
     background-color: brown;
 }
 
 footer {
+    background-image: url(_pattern.png);
     text-align: center;
     background-color: blueviolet;
 }
@@ -53,7 +58,7 @@ aside {
 
 /* Styles for larger screens */
 @media (min-width: 1000px) {
-    section {
+    main {
       width: 75%;
     }
   
@@ -68,8 +73,8 @@ aside {
 }
   
 /* Styles for smaller screens */
-@media (max-width: 1000px) {
-    section, aside {
+@media (max-width: 1100px) {
+    main, aside {
       flex-basis: 100%; /* Both blocks take the full width of the container */
     }
 
@@ -97,7 +102,7 @@ aside {
     background-color: #33cc33; /* Green background for the small blocks */
 }
   
-@media (min-width: 1100px) {
+@media (min-width: 800px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
@@ -112,3 +117,34 @@ aside {
     }
 } 
 
+
+
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #198754;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #198754 !Important;
+    border: solid 1px #198754 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #198754 !Important;
+    border: solid 1px #198754;
+}
