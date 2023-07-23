@@ -1,9 +1,7 @@
-@media (min-width: 800px) {
-    .navbar-custom {
-        padding-left: 5%;
-        padding-right: 5%;
-    }    
-}
+.navbar-custom {
+        padding-left: 3%;
+        padding-right: 3%;
+}    
 
 @media (min-width: 850px) {
     .carousel-custom-size {
@@ -23,7 +21,7 @@
 
 .container {
     background-color: yellow;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
