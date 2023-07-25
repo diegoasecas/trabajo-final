@@ -1,3 +1,10 @@
+#map-1,
+#map-2,
+#map-3,
+#map-4 {
+    scroll-margin-top: 66px;
+  }
+
 body {
     background-color: white;
 }
@@ -13,6 +20,11 @@ article,
 main {
     background-color: white;
     margin-top: 15px;;
+}
+
+article ul > li {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 aside {
@@ -282,4 +294,22 @@ a:hover {
 
 .signature > p > a:hover {
     color: #43ac5d;   
+}
+
+.article-img {
+    width: 80%;
+}
+
+.relax {
+    display:inline-block;
+}
+
+.code {
+    font-family: 'Lucida Console', 'Courier New', monospace;
+    font-size: small;
+    background-color: #7ce0b1;
+}
+
+.figure-caption-custom {
+    width: 70%;
 }
