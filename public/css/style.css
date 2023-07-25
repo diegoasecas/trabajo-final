@@ -56,7 +56,6 @@ footer a {
 
     aside {
         padding-top: 10px;
-        margin-top: 10px;
         border-top: 1px dotted #198754;
     }
 
@@ -208,6 +207,7 @@ a:hover {
 
 .pagination-custom {
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .pagination-custom > li > a
