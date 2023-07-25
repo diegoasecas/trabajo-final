@@ -18,7 +18,7 @@
         <!-- inicio navbar bootstrap -->
         <nav class="navbar navbar-expand-lg bg-success fixed-top navbar-custom" data-bs-theme="dark">
             <div class="container-fluid">
-                <h1 class="title"><a class="navbar-brand" href="#">Aprendiendo Python <img src="public/img/python.png" alt="Python icon" width="30" height="30" /></a></h1>
+                <h1 class="brand-h1-custom"><a class="navbar-brand" href="#">Aprendiendo Python <img src="public/img/python.png" alt="Python icon" width="30" height="30" /></a></h1>
           
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,10 +33,10 @@
                             <a class="nav-link" href="#">Qué es Python?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Newsletter</a>
+                            <a class="nav-link" href="#">Artículos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Curso de Python (Próximamente!)</a>
+                            <a class="nav-link" href="#">Curso de Python</a>
                         </li>
                     </ul>
                 </div>
@@ -48,12 +48,14 @@
             <!-- inicio carousel bootstrap -->
             <div id="newsCarousel" class="carousel slide carousel-custom" data-bs-ride="carousel">
                 
-                <div class="carousel-indicators">
+                
+                <div class="carousel-indicators carousel-indicators-custom">
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
+                
                 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -61,7 +63,7 @@
                         <a href="">
                             <img src="public/img/carousel (1).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
                             <div class="carousel-caption">
-                                <h4>First slide label</h4>
+                                <h2 class="fs-3">First slide label</h2>
                                 <p>Some representative placeholder content for the first slide.</p>
                             </div>
                         </a>
@@ -71,7 +73,7 @@
                         <a href="">
                             <img src="public/img/carousel (2).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
                             <div class="carousel-caption">
-                                <h4>Second slide label</h4>
+                                <h2 class="fs-3">First slide label</h2>
                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </a>
@@ -81,7 +83,7 @@
                         <a href="">
                             <img src="public/img/carousel (3).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
                             <div class="carousel-caption">
-                                <h4>Third slide label</h4>
+                                <h2 class="fs-3">First slide label</h2>
                                 <p>Some representative placeholder content for the third slide.</p>
                             </div>
                         </a>
@@ -91,7 +93,7 @@
                         <a href="">
                             <img src="public/img/carousel (4).jpg" class="d-block w-100" alt="public/img/carousel (1).jpg">
                             <div class="carousel-caption">
-                                <h4>Third slide label</h4>
+                                <h2 class="fs-3">First slide label</h2>
                                 <p>Some representative placeholder content for the fourth slide.</p>
                             </div>
                         </a>
@@ -115,94 +117,128 @@
 
             
             <main>
-            
+                
                 <div class="grid-container">
-                    <div class="main-block">
-                        
-                        <div class="card text-bg-dark">
-                            <img src="public/img/reticulated-python.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                              <h3 class="card-title">Card title</h3>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                    <div class="side-block">
-                        
-
-                        <div class="card mb-3">
-                            <img src="public/img/reticulated-python.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                            </div>
-                          </div>
-
-
-                    </div>
-                    <div class="side-block">
-                        
-
-                        <div class="card mb-3">
-                            <img src="public/img/reticulated-python.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                            </div>
-                          </div>
-
-
-                    </div>
-
-
-
 
                     <div class="main-block">
-                        
-                        <div class="card text-bg-dark">
-                            <img src="public/img/reticulated-python.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                              <h3 class="card-title">Card title</h3>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        <div class="card text-bg-dark card-custom card-big-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img card-custom" alt="...">
+                            <div class="card-img-overlay p-2">
+                                <p class="card-text col-md-12 text-end"><span class="badge text-bg-danger ms-auto">Secondary</span>                            </p>
+                                <div class="card-img-overlay card-img-overlay-custom">
+                                    <h3 class="card-title fs-4"><a href="">Card title</a></h3>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
                             </div>
                         </div>
-
                     </div>
+
                     
                     <div class="side-block">
-                        
-
-                        <div class="card mb-3">
-                            <img src="public/img/reticulated-python.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <div class="card mb-3 card-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img-top card-img-top-custom card-custom" alt="...">
+                            <div class="card-body p-0">
+                                <h4 class="card-title fs-5"><a href="">Card title</a></h4>
+                                <p class="card-text margin-custom">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text col-md-12 text-end"><small class="text-body-secondary ms-auto">Last updated 3 mins ago</small></p>
                             </div>
-                          </div>
-
-
+                        </div>
                     </div>
+
+                    
                     <div class="side-block">
-                        
-
-                        <div class="card mb-3">
-                            <img src="public/img/reticulated-python.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <div class="card mb-3 card-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img-top card-img-top-custom card-custom" alt="...">
+                            <div class="card-body p-0">
+                                <h4 class="card-title fs-5"><a href="">Card title</a></h4>
+                                <p class="card-text margin-custom">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text col-md-12 text-end"><small class="text-body-secondary ms-auto">Last updated 3 mins ago</small></p>
                             </div>
-                          </div>
-
-
+                        </div>
                     </div>
+                    
+
+                    
+                    <div class="main-block">
+                        <div class="card text-bg-dark card-custom card-big-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img card-custom" alt="...">
+                            <div class="card-img-overlay p-2">
+                                <p class="card-text col-md-12 text-end"><span class="badge text-bg-danger ms-auto">Secondary</span>                            </p>
+                                <div class="card-img-overlay card-img-overlay-custom">
+                                    <h3 class="card-title fs-4"><a href="">Card title</a></h3>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="side-block">
+                        <div class="card mb-3 card-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img-top card-img-top-custom card-custom" alt="...">
+                            <div class="card-body p-0">
+                                <h4 class="card-title fs-5"><a href="">Card title</a></h4>
+                                <p class="card-text margin-custom">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text col-md-12 text-end"><small class="text-body-secondary ms-auto">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="side-block">
+                        <div class="card mb-3 card-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img-top card-img-top-custom card-custom" alt="...">
+                            <div class="card-body p-0">
+                                <h4 class="card-title fs-5"><a href="">Card title</a></h4>
+                                <p class="card-text margin-custom">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text col-md-12 text-end"><small class="text-body-secondary ms-auto">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    <div class="main-block">
+                        <div class="card text-bg-dark card-custom card-big-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img card-custom" alt="...">
+                            <div class="card-img-overlay p-2">
+                                <p class="card-text col-md-12 text-end"><span class="badge text-bg-danger ms-auto">Secondary</span>                            </p>
+                                <div class="card-img-overlay card-img-overlay-custom">
+                                    <h3 class="card-title fs-4"><a href="">Card title</a></h3>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="side-block">
+                        <div class="card mb-3 card-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img-top card-img-top-custom card-custom" alt="...">
+                            <div class="card-body p-0">
+                                <h4 class="card-title fs-5"><a href="">Card title</a></h4>
+                                <p class="card-text margin-custom">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text col-md-12 text-end"><small class="text-body-secondary ms-auto">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="side-block">
+                        <div class="card mb-3 card-custom">
+                            <img src="public/img/reticulated-python.jpg" class="card-img-top card-img-top-custom card-custom" alt="...">
+                            <div class="card-body p-0">
+                                <h4 class="card-title fs-5"><a href="">Card title</a></h4>
+                                <p class="card-text margin-custom">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text col-md-12 text-end"><small class="text-body-secondary ms-auto">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
 
 
                 </div>
@@ -214,7 +250,7 @@
                   
                 <!-- inicio paginación bootstrap -->
                 <nav>
-                    <ul class="pagination pagination-custom justify-content-end">
+                    <ul class="pagination pagination-sm pagination-custom justify-content-end">
                         <li class="page-item disabled">
                             <a class="page-link">Anterior</a>
                         </li>
@@ -232,40 +268,56 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- in paginación bootstrap -->
+                <!-- fin paginación bootstrap -->
 
             </main>
             
             <!-- inicio barra lateral -->
             <aside>
+
+                    <div class="card card-custom padding-custom">
+                        <h5 class="card-title">¿Qué es Python?</h5>
+                        <p class="card-text margin-custom">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Continuar leyendo ></a>
+                    </div>
+
+
+                    <div class="card advert text-bg-light">
+                        <div class="card-header p-2  text-bg-warning">
+                            Próximamente!
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Curso Online de Python</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class="col-md-12 text-end">
+                                <a class="btn btn-sm btn-success ms-auto" href="">Inscribite ahora!</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div class="card card-custom padding-custom">
+                    <h5 class="card-title">Te puede interesar</h5>
+
+                    <div class="related">
+                        <h6 class="card-title"><a href="">Card title</a></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+
+                    <div class="related">
+                        <h6 class="card-title"><a href="">Card title</a></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+
+                    <div class="related">
+                        <h6 class="card-title"><a href="">Card title</a></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                        
+                </div>
                 
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-
-
-
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-                  
-
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/u3T7hmLthUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VchuKL44s6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sugvnHA7ElY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p class="d-grid col-6 mx-auto padding-custom"><a class="btn btn-sm btn-success" href="">Ver más artículos</a></p>
+            
             </aside>
             <!-- fin barra lateral -->
             
@@ -274,8 +326,11 @@
         <footer>
             <p><a href="#top">Volver al comienzo de la página</a></p>
             <p><img src="public/img/python.png" width="50" height="50"/></p>
-            <p>Copyright 2023 © Diego Guaraz</p>
-            <p class="foot"><a href="#top">Contacto</a></p>
+            <div class="signature">
+                <p>Diego Guaraz para Potrero Digital</p>
+                <p>Desarrollo Web Front End (Prof. Emiliano Piai)</p>
+                <p>Mar del Plata, Julio 2023</p>
+            </div>
         </footer>    
 
         <!-- bootstrap js -->

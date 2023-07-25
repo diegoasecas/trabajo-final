@@ -1,38 +1,5 @@
-.navbar-custom {
-        padding-left: 3%;
-        padding-right: 3%;
-    }    
-
-.title {
-    font-size: larger;
-    font-weight:600;
-    margin: 0;
-}
-
-
-@media (min-width: 800px) {
-    .carousel-custom {
-        width: 850px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.carousel-custom a {
-    text-decoration: none;
-    color:white;
-}
-
-.container {
-    background-color: yellow;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-}
-
 body {
-    background-color: green;
+    background-color: white;
 }
 
 header {
@@ -43,27 +10,36 @@ header {
 }
 
 main {
-    background-color: brown;
+    background-color: white;
+    margin-top: 15px;;
+}
+
+aside {
+    background-color: white;
+    font-size: smaller;
 }
 
 footer {
     background-image: url(_pattern.png);
     text-align: center;
-    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    font-size: smaller;
 }
 
-aside {
-    background-color: chocolate;
+footer a {
+    color:#28994e;
+    text-decoration: none;
 }
 
-/* Styles for larger screens */
 @media (min-width: 1000px) {
     main {
-      width: 75%;
+        width: 75%;
+        padding-right: 30px;
     }
   
     aside {
-      width: 25%; /* 20% of the container width */
+        width: 25%;
     }
 
     iframe {
@@ -71,11 +47,17 @@ aside {
         height: auto;
     }
 }
-  
-/* Styles for smaller screens */
-@media (max-width: 1100px) {
-    main, aside {
-      flex-basis: 100%; /* Both blocks take the full width of the container */
+
+@media (max-width: 1000px) {
+    main,
+    aside {
+        flex-basis: 100%;
+    }
+
+    aside {
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px dotted #198754;
     }
 
     iframe {
@@ -83,33 +65,140 @@ aside {
     }
 }
 
-.foot {margin-bottom: 0;}
+a {
+    color:#198754;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.margin-custom {
+    margin-bottom: 0.5em;
+}
+
+.padding-custom {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.navbar-custom {
+    padding-left: 3%;
+    padding-right: 3%;
+}
 
 
-/* responsive grid */
+.navbar-custom a:hover {
+    text-decoration: none;
+}
+
+.brand-h1-custom,
+.brand-h1-custom a {
+    font-size: x-large;
+    margin: 0;
+}
+
+@media (min-width: 1000px) {
+    .navbar-custom {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+.carousel-custom a {
+    text-decoration: none;
+    color:white;
+}
+
+
+.carousel-indicators-custom [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.carousel-indicators-custom { /* Initially, set the element as hidden */
+    opacity: 0;
+    visibility: hidden;
+    /* Apply transition for smooth fade-in effect */
+    transition: opacity 0.5s, visibility 0s 0.5s;
+ }
+.carousel:hover .carousel-indicators-custom { /* When hovering over the parent, show the child element */
+    opacity: 1;
+    visibility: visible;
+    /* Reset the transition delay for the fade-in effect */
+    transition-delay: 0s;
+ }
+
+@media (min-width: 915px) {
+    .carousel-custom {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-    grid-gap: 0; /* Adjust the gap between the items */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 17px;
 }
   
 .main-block {
-    grid-column: 1 / span 2; /* Span the big block across two columns */
-    background-color: #ffcc00; /* Yellow background for the big block */
+    grid-column: 1 / span 2;
+    background-color: white;
 }
   
 .side-block {
-    background-color: #33cc33; /* Green background for the small blocks */
+    background-color: white;
+    font-size: smaller;
 }
-  
+
+.card-custom {
+    border-radius: 0;
+    border: none;
+}
+
+.card-big-custom a {
+    color:white;
+    text-decoration: none;
+}
+
+.card-big-custom a:hover {
+    text-decoration: underline;
+}
+
+.card-img-top-custom {
+    margin-bottom: 10px;
+}
+
+.card-img-overlay-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 @media (min-width: 800px) {
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .main-block {
-        grid-column: span 2; /* The big block will span two columns */
+        grid-column: span 2;
     }
 
     .side-block {
@@ -117,34 +206,53 @@ aside {
     }
 } 
 
+.pagination-custom {
+    margin-top: 20px;
+}
 
-
-
-.pagination > li > a
+.pagination-custom > li > a
 {
-    background-color: white;
     color: #198754;
 }
 
-.pagination > li > a:focus,
-.pagination > li > a:hover,
-.pagination > li > span:focus,
-.pagination > li > span:hover
+.pagination-custom > li > a:focus,
+.pagination-custom > li > a:hover,
+.pagination-custom > li > span:focus,
+.pagination-custom > li > span:hover
 {
     color: #5a5a5a;
     background-color: #eee;
     border-color: #ddd;
+    text-decoration: none;
 }
 
-.pagination > .active > a
+.pagination-custom > .active > a
 {
     color: white;
     background-color: #198754 !Important;
     border: solid 1px #198754 !Important;
 }
 
-.pagination > .active > a:hover
+.pagination-custom > .active > a:hover
 {
     background-color: #198754 !Important;
     border: solid 1px #198754;
+}
+
+.advert {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.related {
+    padding-left: 17px;
+    border-left: 1px dotted #198754;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.signature > p {
+    color:#797979;
+    font-size: smaller;
+    margin: 0px;
 }
