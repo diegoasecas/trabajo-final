@@ -306,8 +306,9 @@ a:hover {
 
 .code {
     font-family: 'Lucida Console', 'Courier New', monospace;
-    font-size: small;
+    font-size: smaller;
     background-color: #7ce0b1;
+    padding: 3px;
 }
 
 .figure-caption-custom {
