@@ -9,6 +9,7 @@ header {
     margin-top: 56px;
 }
 
+article,
 main {
     background-color: white;
     margin-top: 15px;;
@@ -43,6 +44,7 @@ iframe {
 }
 
 @media (min-width: 1000px) {
+    article,
     main {
         width: 75%;
         padding-right: 30px;
@@ -54,6 +56,7 @@ iframe {
 }
 
 @media (max-width: 1000px) {
+    article,
     main,
     aside {
         flex-basis: 100%;
@@ -168,6 +171,20 @@ a:hover {
     font-size: smaller;
 }
 
+.article-abstract {
+    width: 55%;
+    padding-right: 15px;
+}
+.article-map {
+    width: 45%;
+}
+
+.article-map-bg {
+    background-color: #DCEDE5;
+    border: 0px;
+    
+}
+
 .card-custom {
     border-radius: 0;
     border: none;
@@ -202,8 +219,10 @@ a:hover {
     }
 } 
 
+
+
 .blockquote-custom {
-    width: 80%;
+    width: 90%;
     background-color: #DCEDE5;
     font-size:large ;
 }
