@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-image: url(_pattern.png);
+    background-image: url(../img/pattern.png);
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 56px;
@@ -19,7 +19,7 @@ header {
 article,
 main {
     background-color: white;
-    margin-top: 15px;;
+    margin-top: 1em;
 }
 
 article ul > li {
@@ -30,10 +30,15 @@ article ul > li {
 aside {
     background-color: white;
     font-size: smaller;
+    margin-top: 0.5em;
+}
+
+aside > p {
+    margin: 1.5em;
 }
 
 footer {
-    background-image: url(_pattern.png);
+    background-image: url(../img/pattern.png);
     text-align: center;
     color: white;
     padding: 20px;
@@ -45,7 +50,7 @@ footer img {
 }
 
 footer a {
-    color:#28994e;
+    color:#207c3f;
     text-decoration: none;
 }
 
@@ -278,21 +283,21 @@ a:hover {
 }
 
 .advert {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .related {
-    padding-left: 17px;
+    padding-left: 1em;
     border-left: 1px dotted #198754;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .signature > p {
     color:#797979;
     font-size: smaller;
-    margin: 0px;
+    margin: 0;
 }
 
 .signature > p > a {
