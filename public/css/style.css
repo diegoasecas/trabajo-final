@@ -1,12 +1,14 @@
-#map-1,
-#map-2,
-#map-3,
-#map-4 {
-    scroll-margin-top: 66px;
-  }
-
 body {
     background-color: white;
+}
+
+a {
+    color:#198754;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -22,9 +24,20 @@ main {
     margin-top: 1em;
 }
 
+article h3 {
+    padding-bottom:0.5em;
+    border-bottom: 1px dotted #198754;
+}
+
 article ul > li {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+iframe {
+    width: 80%;
+    height: 300px;
+    display: block;
 }
 
 aside {
@@ -41,13 +54,13 @@ footer {
     background-image: url(../img/pattern.png);
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 2em;
     font-size: smaller;
     margin-top: 1em;
 }
 
 footer img {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 footer a {
@@ -55,17 +68,11 @@ footer a {
     text-decoration: none;
 }
 
-iframe {
-    width: 80%;
-    height: 300px;
-    display: block;
-}
-
 @media (min-width: 1000px) {
     article,
     main {
         width: 75%;
-        padding-right: 30px;
+        padding-right: 2em;
     }
   
     aside {
@@ -81,7 +88,7 @@ iframe {
     }
 
     aside {
-        padding-top: 10px;
+        padding-top: 1em;
         border-top: 1px dotted #198754;
     }
 
@@ -90,33 +97,23 @@ iframe {
     }
 }
 
-a {
-    color:#198754;
-    text-decoration: none;
+.container {
+    background-color: white;
+    width: 85%;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
-a:hover {
-    text-decoration: underline;
+@media (max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
 }
 
 .margin-custom {
     margin-bottom: 0.5em;
-}
-
-.media-container {
-    padding: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 1em;
-}
-
-.container {
-    background-color: white;
-    width: 90%;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
 }
 
 .navbar-custom {
@@ -138,77 +135,37 @@ a:hover {
 
 @media (min-width: 1000px) {
     .navbar-custom {
-        padding-left: 4.25%;
-        padding-right: 4.5%;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 }
 
 .carousel-indicators-custom [data-bs-target] {
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin-left: 7px;
-    margin-right: 7px;
+    width: 0.75em;
+    height: 0.75em;
+    margin-left: 0.65em;
+    margin-right: 0.65em;
 }
 
-.carousel-control-custom,
 .carousel-indicators-custom {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0s 0.5s;
  }
 
- .carousel:hover .carousel-control-custom,
- .carousel:hover .carousel-indicators-custom {
+.carousel:hover .carousel-indicators-custom {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
  }
 
 @media (min-width: 915px) {
-    .card-img-main-custom,
     .carousel-custom {
         width: 850px;
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-.bloc-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
-  
-.big-bloc {
-    grid-column: 1 / span 2;
-    background-color: white;
-}
-  
-.smol-bloc {
-    background-color: white;
-    font-size: smaller;
-}
-
-.article-header {
-    margin-top: 1em;
-}
-
-.article-abstract {
-    width: 55%;
-    padding-right: 15px;
-}
-.article-map {
-    width: 45%;
-}
-
-.article-map-bg {
-    padding: 1em;
-    padding-bottom: 0.5em;
-    padding-right: 0.5em;
-    background-color: #DCEDE5;
-    border: 0px;
-    
 }
 
 .card-custom {
@@ -230,6 +187,30 @@ a:hover {
     justify-content: flex-end;
 }
 
+@media (min-width: 915px) {
+    .card-img-main-custom {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.bloc-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+  
+.big-bloc {
+    grid-column: 1 / span 2;
+    background-color: white;
+}
+  
+.smol-bloc {
+    background-color: white;
+    font-size: smaller;
+}
+
 @media (min-width: 800px) {
     .bloc-container {
         display: grid;
@@ -245,8 +226,55 @@ a:hover {
     }
 } 
 
+.article-abstract {
+    width: 55%;
+    padding-right: 2em;
+}
+.article-map {
+    width: 45%;
+}
+
+.article-map-bg {
+    padding: 1em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    background-color: #DCEDE5;
+    border: 0;
+    
+}
+
 .bg-py {
     background-color: #ceebd6;
+}
+
+#map-1,
+#map-2,
+#map-3,
+#map-4 {
+    scroll-margin-top: 66px;
+  }
+
+.media-container {
+    padding: 0;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    margin-bottom: 0.5em;
+}
+
+.article-img {
+    width: 80%;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 1000px) {
+    .article-img {
+        width: 100%;
+    }
+}
+
+.figure-caption-custom {
+    width: 70%;
+    padding-top: 0.5em;;
 }
 
 .blockquote-custom {
@@ -258,15 +286,16 @@ a:hover {
     padding: 1em;
 }
 
-.relevant {
-    width: 90%;
-    background-color: white;
-    border: 1px dashed #198754
+.code {
+    font-family: Consolas,'Lucida Console', 'Courier New', monospace;
+    font-size: smaller;
+    background-color: #7ce0b1;
+    padding: 3px;
 }
 
 .pagination-custom {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
 }
 
 .pagination-custom > li > a {
@@ -294,6 +323,11 @@ a:hover {
     border: solid 1px #198754;
 }
 
+.card-side {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
 .advert {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -302,8 +336,8 @@ a:hover {
 .related {
     padding-left: 1em;
     border-left: 1px dotted #198754;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
 }
 
 .signature > p {
@@ -319,28 +353,4 @@ a:hover {
 
 .signature > p > a:hover {
     color: #43ac5d;   
-}
-
-.article-img {
-    width: 80%;
-}
-
-.relax {
-    display:inline-block;
-}
-
-.code {
-    font-family: Consolas,'Lucida Console', 'Courier New', monospace;
-    font-size: smaller;
-    background-color: #7ce0b1;
-    padding: 3px;
-}
-
-.figure-caption-custom {
-    width: 70%;
-}
-
-.card-side {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
 }
