@@ -215,6 +215,8 @@ a:hover {
     border: none;
 }
 
+
+
 .card-big-custom a:hover {
     text-decoration: underline;
 }
@@ -330,4 +332,9 @@ a:hover {
 
 .figure-caption-custom {
     width: 70%;
+}
+
+.card-side {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
