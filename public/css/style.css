@@ -34,7 +34,7 @@ aside {
 }
 
 aside > p {
-    margin: 1.5em;
+    margin: 1em;
 }
 
 footer {
@@ -43,6 +43,7 @@ footer {
     color: white;
     padding: 20px;
     font-size: smaller;
+    margin-top: 1em;
 }
 
 footer img {
@@ -137,8 +138,8 @@ a:hover {
 
 @media (min-width: 1000px) {
     .navbar-custom {
-        padding-left: 7%;
-        padding-right: 7%;
+        padding-left: 4.25%;
+        padding-right: 4.5%;
     }
 }
 
@@ -176,7 +177,7 @@ a:hover {
 .bloc-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 17px;
+    grid-gap: 20px;
 }
   
 .big-bloc {
@@ -215,14 +216,12 @@ a:hover {
     border: none;
 }
 
-
-
 .card-big-custom a:hover {
     text-decoration: underline;
 }
 
 .card-img-top-custom {
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 .card-img-overlay-custom {
@@ -242,16 +241,27 @@ a:hover {
     }
 
     .smol-bloc {
-        grid-column: span 1; /* Each small block will span one column */
+        grid-column: span 1;
     }
 } 
 
-
+.bg-py {
+    background-color: #ceebd6;
+}
 
 .blockquote-custom {
     width: 90%;
     background-color: #DCEDE5;
-    font-size:large ;
+    font-size:large;
+    border: 0;
+    margin: 1.5em;
+    padding: 1em;
+}
+
+.relevant {
+    width: 90%;
+    background-color: white;
+    border: 1px dashed #198754
 }
 
 .pagination-custom {
@@ -309,10 +319,6 @@ a:hover {
 
 .signature > p > a:hover {
     color: #43ac5d;   
-}
-
-.article-img-container {
-
 }
 
 .article-img {
