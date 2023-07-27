@@ -160,6 +160,10 @@ footer a {
     transition-delay: 0s;
  }
 
+.carousel-custom {
+    text-shadow: 4px 4px 4px black;
+ }
+ 
 @media (min-width: 915px) {
     .carousel-custom {
         width: 850px;
@@ -185,6 +189,7 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    text-shadow: 4px 4px 4px black;
 }
 
 @media (min-width: 915px) {
