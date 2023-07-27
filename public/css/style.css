@@ -199,8 +199,8 @@ footer a {
 .bloc-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1.25em;
-    margin-bottom: 1.25em;
+    grid-gap: 1.5em;
+    margin-bottom: 1.5em;
 }
   
 .big-bloc {
