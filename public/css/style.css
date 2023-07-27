@@ -177,10 +177,6 @@ footer a {
     border: none;
 }
 
-.card-big-custom a:hover {
-    text-decoration: underline;
-}
-
 .card-img-top-custom {
     margin-bottom: 0.5em;
 }
@@ -203,7 +199,8 @@ footer a {
 .bloc-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
+    grid-gap: 1.25em;
+    margin-bottom: 1.25em;
 }
   
 .big-bloc {
@@ -309,7 +306,7 @@ footer a {
 }
 
 .pagination-custom {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1.5em;
 }
 
