@@ -56,16 +56,18 @@
                 </div>
             </nav>
 
+            <!-- tarjeta bootstrap personalizada -->
             <div class="card text-bg-dark card-custom card-big-custom card-img-main-custom">
-                <img src="../img/img_001.jpg" class="card-img card-custom alt="...">
-                <!--
+                <img src="../img/articulo_01_01.jpg" class="card-img card-custom alt="...">
+                
                 <div class="card-img-overlay">
+                
                     <div class="card-img-overlay card-img-overlay-custom m-4">
-                        <h2 class="card-title fs-3"><a href="">Card title</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h2 class="card-title h1">El módulo random() de python</h2>
+                        <p class="card-text fs-5">Generando aleatoriedad en tus programas en Python</p>
                     </div>
                 </div>
-                -->
+                
             </div>
 
 
@@ -77,6 +79,117 @@
             <!-- contenedor artículo -->
             <article>
                 
+                <div class="alert alert-danger text-center article-img mx-auto" role="alert">
+                    NOTA: Todos los enlaces *a artículos* redirigen a este artículo
+                </div>
+
+                <div class="article-header d-flex">
+                    
+                    <div class="article-abstract">
+                        <h3 class="map-index" id="map-1">Introducción</h3>
+                        <p>El módulo <span class="code">random</span> en Python es una biblioteca esencial que nos permite incorporar elementos de aleatoriedad y azar en nuestros programas. Desde juegos hasta aplicaciones de simulación, este módulo nos brinda las herramientas para generar números aleatorios, seleccionar elementos de manera aleatoria y barajar listas. En este artículo, profundizaremos en los conceptos y funcionalidades del módulo <span class="code">random</span>, y proporcionaremos ejemplos de código para que los principiantes puedan comenzar a utilizarlo de manera efectiva.</p>
+                    </div>
+                
+                    <div class="article-map">
+                        <div class="card article-map-bg">
+                            <h5>Índice</h5>
+                            <ol>
+                                <li><a href="#map-1">Introducción</a></li>
+                                <li><a href="#map-2">Generando Números Aleatorios</a></li>
+                                <li><a href="#map-3">Selección Aleatoria de Elementos en una Lista</a></li>
+                                <li><a href="#map-4">Barajando Elementos en una Lista</a></li>
+                                <li><a href="#map-5">Creando Contraseñas Aleatorias y Seguras</a></li>
+                                <li><a href="#map-6">Juego de Adivinar el Número</a></li>
+                                <li><a href="#map-7">Conclusión</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="media-container">
+                    <img src="../img/articulo_01_02.jpg" alt="" class="article-img mx-auto d-block">
+                    <div class="figure-caption figure-caption-custom text-center mx-auto">
+                        El módulo <span class="code">random()</span> nos permite aplicar diversas funciones para trabajar con la aleatoriedad en nuestros programas.
+                    </div>
+                </div>
+                
+                <h3 class="map-index" id="map-2">1. Generando Números Aleatorios</h3>
+                
+                <p>El primer paso para utilizar el módulo <span class="code">random</span> es importarlo en nuestro código. Luego, podemos generar números aleatorios enteros mediante la función <span class="code">randint()</span>. Esta función toma dos argumentos, el valor mínimo y máximo del rango en el cual deseamos generar el número aleatorio. Por ejemplo:</p>
+                
+                
+                <p class="code-block mx-auto d-block">import random
+                    
+                    numero_aleatorio = random.randint(1, 100)
+                    print("Número aleatorio entre 1 y 100:", numero_aleatorio)</p>
+                
+                
+                <h3 class="map-index" id="map-3">Selección Aleatoria de Elementos en una Lista</h3>
+                
+                <p>Otra característica útil del módulo <span class="code">random</span> es la capacidad de seleccionar elementos aleatorios de una lista. Esto puede ser muy útil en situaciones como juegos de cartas, donde necesitamos barajar un mazo. Para seleccionar un elemento aleatorio de una lista, podemos utilizar la función <span class="code">choice()</span></p>
+                
+                
+                <p class="code-block mx-auto d-block">import random
+                    
+                    cartas = ["As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+                    carta_aleatoria = random.choice(cartas)
+                    print("Carta seleccionada aleatoriamente:", carta_aleatoria)</p>
+                
+                
+                <h3 class="map-index" id="map-4">Barajando Elementos en una Lista</h3>
+                
+                <p>Para barajar los elementos de una lista en un orden aleatorio, utilizamos la función <span class="code">shuffle()</span>. Esto es especialmente útil para juegos de cartas o cuando necesitamos ordenar elementos de manera aleatoria.</p>
+                
+                
+                <p class="code-block mx-auto d-block">import random
+                    
+                    baraja = ["As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+                    random.shuffle(baraja)
+                    print("Baraja barajada:", baraja)</p>
+                
+                
+                <h3 class="map-index" id="map-5">Creando Contraseñas Aleatorias y Seguras</h3>
+                
+                <p>En muchos escenarios de desarrollo de software, se requiere la generación de contraseñas seguras. El módulo <span class="code">random</span> en combinación con la biblioteca string puede ser utilizado para crear contraseñas aleatorias que incluyan caracteres alfanuméricos y especiales.</p>
+                
+                
+                <p class="code-block mx-auto d-block">import random
+                    import string
+                    
+                    longitud = 12
+                    caracteres = string.ascii_letters + string.digits + string.punctuation
+                    contrasena = ''.join(random.choice(caracteres) for i in range(longitud))
+                    print("Contraseña generada:", contrasena)</p>
+                
+                
+                <h3 class="map-index" id="map-6">Juego de Adivinar el Número</h3>
+                
+                <p>Utilizando el módulo <span class="code">random</span>, podemos crear un juego simple donde la computadora genera un número secreto y el jugador tiene que adivinarlo.</p>
+                
+                
+                <p class="code-block mx-auto d-block">import random
+                    
+                    numero_secreto = random.randint(1, 100)
+                    
+                    while True:
+                    &nbsp;intento = int(input("Adivina el número (1-100): "))
+                    
+                    &nbsp;if intento == numero_secreto:
+                    &nbsp;&nbsp;print("¡Felicidades! ¡Adivinaste el número!")
+                    &nbsp;&nbsp;break
+                    &nbsp;elif intento < numero_secreto:
+                    &nbsp;&nbsp;print("El número es más grande. Intenta nuevamente.")
+                    &nbsp;else:
+                    &nbsp;&nbsp;print("El número es más pequeño. Intenta nuevamente.")</p>
+                
+                
+                <h3 class="map-index" id="map-7">Conclusión</h3>
+                
+                <p>El módulo <span class="code">random</span> de Python es una herramienta poderosa y versátil para agregar aleatoriedad y azar en nuestros programas. A través de ejemplos detallados, hemos aprendido cómo generar números aleatorios, seleccionar elementos de listas de manera aleatoria, barajar elementos y crear contraseñas seguras. Estas habilidades son esenciales para desarrollar juegos, aplicaciones de simulación y cualquier programa que requiera elementos de imprevisibilidad. ¡Esperamos que este artículo te haya dado una visión más profunda del módulo <span class="code">random</span> y te motive a experimentar y explorar más con esta emocionante funcionalidad en tus proyectos de Python!</p>
+
+                <!-- botón / enlace bootstrap -->
+                <p class="fs-5"><a href="../../index.html"><< Volver al inicio</a></p>
+
             </article>
             
             <!-- barra lateral -->
@@ -85,7 +198,7 @@
                 <!-- tarjeta bootstrap personalizada -->
                 <div class="card card-custom card-side">
                     <h5 class="card-title">¿Qué es Python?</h5>
-                    <p class="card-text margin-custom">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text margin-custom">Exploraremos el fascinante mundo de Python, un lenguaje de programación poderoso y fácil de usar. Descubrí por qué es tan popular entre los programadores y cómo facilita la creación de diversas aplicaciones.</p>
                     <a href="../views/que_es_python.html#top" class="card-link">Continuar leyendo ></a>
                 </div>
 
@@ -96,7 +209,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Curso Online de Python</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">A tu tiempo y en tus horarios aprendé la sintaxis básica, variables, estructuras de control, manejo de datos, funciones y operaciones con archivos. Adquirí habilidades sólidas en Python para enfrentar desafíos de programación con confianza.</p>
                         <div class="col-md-12 text-end">
                             <a class="btn btn-sm btn-success ms-auto" href="../views/curso_python.html">Inscribite ahora!</a>
                         </div>
@@ -108,9 +221,21 @@
                     <h5 class="card-title">Te puede interesar</h5>
 
                     <div class="related">
-                        <h6 class="card-title"><a href="../views/articulo_01.html">Card title</a></h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                        <h6 class="card-title"><a href="../views/articulo_01.html">Pandas: Data Science en Python</a></h6>
+                        <p class="card-text">Pandas es sin duda el paquete más importante de Python utilizado para Data Science. No solo ofrece muchos métodos y...</p>
                     </div>
+
+                    <div class="related">
+                        <h6 class="card-title"><a href="../views/articulo_01.html">Juego de la víbora (Snake) con Pygame</a></h6>
+                        <p class="card-text">En este tutorial aprenderemos cómo hacer una version del juego de la viborita que la mayoría jugamos, ese que venia con el Nokia en los 2000...</p>
+                    </div>
+
+                    <div class="related">
+                        <h6 class="card-title"><a href="../views/articulo_01.html">Tipos de datos de Python</a></h6>
+                        <p class="card-text">Los tipos de datos de Python no son más que una clasificación de valores de datos similares. En Python, no declaramos explícitamente el tipo de datos...</p>
+                    </div>
+
                 </div>
                 
                 <!-- botón / enlace bootstrap -->

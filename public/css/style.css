@@ -248,12 +248,7 @@ footer a {
     font-weight: 500;
 }
 
-#map-1,
-#map-2,
-#map-3,
-#map-4 {
-    scroll-margin-top: 66px;
-  }
+
 
 .media-container {
     padding: 0;
@@ -264,7 +259,6 @@ footer a {
 
 .article-img {
     width: 80%;
-    margin-bottom: 0.5em;
 }
 
 @media (max-width: 1000px) {
@@ -292,6 +286,21 @@ footer a {
     font-size: smaller;
     background-color: #7ce0b1;
     padding: 3px;
+}
+
+.code-block {
+    padding: 1em;
+    font-family: Consolas,'Lucida Console', 'Courier New', monospace;
+    font-size: smaller;
+    background-color: #DCEDE5;
+    white-space: pre-line;
+    width: 80%;
+}
+
+@media (max-width: 1000px) {
+    .code-block {
+        width: 100%;
+    }
 }
 
 .pagination-custom {
@@ -354,4 +363,8 @@ footer a {
 
 .signature > p > a:hover {
     color: #43ac5d;   
+}
+
+.map-index {
+    scroll-margin-top: 66px;
 }
