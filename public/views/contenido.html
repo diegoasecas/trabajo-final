@@ -55,55 +55,92 @@
                 </div>
             </nav>
 
-            <!-- carousel bootstrap -->
+            <!-- carousel bootstrap personalizado -->
             <div id="newsCarousel" class="carousel slide carousel-custom" data-bs-ride="carousel">
                 
+                <!-- indicadores items carousel-->
                 <div class="carousel-indicators carousel-indicators-custom">
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 
+                <!-- items carousel-->
                 <div class="carousel-inner">
 
+
                     <div class="carousel-item active">
-                        <a href="">
-                            <img src="../img/carousel_01.jpg" class="d-block w-100" alt="../img/carousel_01.jpg">
+                        <a href="../views/articulo_01.html">
+                            <img src="../img/carousel_04.jpg" class="d-block w-100" alt="../img/carousel_01.jpg">
                             <div class="carousel-caption">
-                                <h2 class="fs-3">First slide label</h2>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h2 class="fs-3">Pandas: Data Science en Python</h2>
+                                <p>Pandas es sin duda el paquete más importante de Python utilizado para Data Science. No solo ofrece muchos métodos y...</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <a href="../views/articulo_01.html">
+                            <img src="../img/carousel_03.jpg" class="d-block w-100" alt="../img/carousel_01.jpg">
+                            <div class="carousel-caption">
+                                <h2 class="fs-3">El módulo random de Python</h2>
+                                <p>El módulo random en Python es una biblioteca esencial que nos permite incorporar elementos de aleatoriedad y azar en nuestros programas. Desde juegos hasta...</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    
+    
+                    
+                    <div class="carousel-item">
+                        <a href="../views/articulo_01.html">
+                            <img src="../img/carousel_02.jpg" class="d-block w-100" alt="../img/carousel_01.jpg">
+                            <div class="carousel-caption">
+                                <h2 class="fs-3">Tipos de datos de Python</h2>
+                                <p>Los tipos de datos de Python no son más que una clasificación de valores de datos similares. En Python, no declaramos explícitamente el tipo de datos...</p>
                             </div>
                         </a>
                     </div>
                     
-                    <div class="carousel-item">
-                        <a href="">
-                            <img src="../img/carousel_02.jpg" class="d-block w-100" alt="../img/carousel_01.jpg">
-                            <div class="carousel-caption">
-                                <h2 class="fs-3">First slide label</h2>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </a>
-                    </div>
-                  
-                    <div class="carousel-item">
-                        <a href="">
-                            <img src="../img/carousel_03.jpg" class="d-block w-100" alt="../img/carousel_01.jpg">
-                            <div class="carousel-caption">
-                                <h2 class="fs-3">First slide label</h2>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </a>
-                    </div>
 
+
+
+
+                    <div class="carousel-item">
+                        <a href="../views/articulo_01.html">
+                            <img src="../img/carousel_01.jpg" class="d-block w-100" alt="../img/carousel_01.jpg">
+                            <div class="carousel-caption">
+                                <h2 class="fs-3">__init__.py en Python - Qué es y cómo funciona</h2>
+                                <p>Hoy vamos a ver que es y como funciona el archivo __init__.py en Python...</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    
+
+
+                    
+                
+                  
+                    
+                    
+
+
+
+                    
                 </div>
 
-                <button class="carousel-control-prev carousel-control-custom" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                <!-- controles carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 
-                <button class="carousel-control-next carousel-control-custom" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -119,18 +156,18 @@
             <!-- contenedor artículos -->
             <main>
 
-                <h3 class="mb-3">Todos los artículos del blog</h3>
+                <h2 class="mb-3">Todos los artículos del blog</h2>
                 
-                
-                <div class="card mb-3">
+            <div class="article-list">    
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_01_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_01_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="../views/articulo_01.html">El módulo random() de Python</a></h5>
+                            <div class="card-body descr">
+                                <h5 class="card-title"><a href="../views/articulo_01.html">El módulo random de Python</a></h5>
                                 <p class="card-text">Generando funciones de aleatoriedad en tus programas en Python....</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
                             </div>
@@ -138,14 +175,14 @@
                     </div>
                 </div>
                 
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_02_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_02_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body descr">
                                 <h5 class="card-title"><a href="../views/articulo_01.html">Instalar Python y Django</a></h5>
                                 <p class="card-text">Django es un Framework de Python, un Framework para construir aplicaciones web (sitios web con Python) y por lo tanto...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
@@ -154,14 +191,14 @@
                     </div>
                 </div>
                 
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_03_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_03_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body descr">
                                 <h5 class="card-title"><a href="../views/articulo_01.html">PDF a JPG: Cómo convertir un archivo usando Python</a></h5>
                                 <p class="card-text">Hay muchas herramientas disponibles en Internet para convertir un PDF a JPG. En este artículo, vamos a escribir código para...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
@@ -170,14 +207,14 @@
                     </div>
                 </div>
                   
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_04_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_04_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body descr">
                                 <h5 class="card-title"><a href="../views/articulo_01.html">Ejecutar scripts de Python automáticamente en Windows</a></h5>
                                 <p class="card-text">En esta publicación les mostraré cómo programar la ejecución de un script Python usando el Programador de tareas (Windows Task...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
@@ -186,15 +223,15 @@
                     </div>
                 </div>
                   
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_05_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_05_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="../views/articulo_01.html">Ejercicios con for en Python</a></h5>
+                            <div class="card-body descr">
+                                <h5 class="card-title"><a href="../views/articulo_01.html">Ejercicios con <span class="code">for</span> en Python</a></h5>
                                 <p class="card-text">A veces, los programas necesitan repetir acciones. Para repetir acciones podemos usar el bucle for en Python. Un bucle for...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
                             </div>
@@ -203,14 +240,14 @@
                 </div>
 
                 
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_06_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_06_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body descr">
                                 <h5 class="card-title"><a href="../views/articulo_01.html">Pandas: Data Science en Python</a></h5>
                                 <p class="card-text">Pandas es sin duda el paquete más importante de Python utilizado para Data Science. No solo ofrece muchos métodos y...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
@@ -220,14 +257,14 @@
                 </div>
                   
                   
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_07_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_07_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body descr">
                                 <h5 class="card-title"><a href="../views/articulo_01.html">Tipos de datos de Python</a></h5>
                                 <p class="card-text">Los tipos de datos de Python no son más que una clasificación de valores de datos similares. En Python, no declaramos explícitamente el tipo de datos...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
@@ -236,14 +273,14 @@
                     </div>
                 </div>
                   
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_08_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_08_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body descr">
                                 <h5 class="card-title"><a href="../views/articulo_01.html">¿Qué sucede al ejecutar un script de Python?</a></h5>
                                 <p class="card-text">Alguna vez se han preguntado ¿qué es lo que sucede cuando uno ejecuta un script de Python? Es claro que ejecutaremos el código que escribimos pero me refiero a lo que hay detrás de...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
@@ -253,14 +290,14 @@
                 </div>
 
 
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_09_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_09_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body descr">
                                 <h5 class="card-title"><a href="../views/articulo_01.html">Juego de la víbora (Snake) con Pygame</a></h5>
                                 <p class="card-text">En este tutorial aprenderemos cómo hacer una version del juego de la viborita que la mayoría jugamos, ese que venia con el Nokia en los 2000...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
@@ -270,16 +307,16 @@
                 </div>
                   
                   
-                <div class="card mb-3">
+                <div class="card mb-3 card-custom">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../img/articulo_10_mini.jpg" class="img-fluid rounded-start" alt="Portada del artículo">
+                            <img src="../img/articulo_10_mini.jpg" class="img-fluid" alt="Portada del artículo">
                         </div>
                       
                         <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="../views/articulo_01.html">__init__.py en Python - Que es y como funciona</a></h5>
-                                <p class="card-text">__init__.py en Python Hoy vamos a ver que es y como funciona el archivo __init__.py en Python. Hace unos días...</p>
+                            <div class="card-body descr">
+                                <h5 class="card-title"><a href="../views/articulo_01.html">__init__.py en Python: Qué es y cómo funciona</a></h5>
+                                <p class="card-text">Hoy vamos a ver que es y como funciona el archivo __init__.py en Python...</p>
                                 <p class="card-text"><small class="text-body-secondary"><a href="../views/articulo_01.html">Continuar leyendo ></a></small></p>
                             </div>
                         </div>
@@ -287,7 +324,7 @@
                 </div>
                   
                   
-                  
+            </div> 
                   
 
 
@@ -324,12 +361,12 @@
                 <!-- tarjeta bootstrap personalizada -->
                 <div class="card card-custom card-side">
                     <h5 class="card-title">¿Qué es Python?</h5>
-                    <p class="card-text margin-custom">Exploraremos el fascinante mundo de Python, un lenguaje de programación poderoso y fácil de usar. Descubrí por qué es tan popular entre los programadores y cómo facilita la creación de diversas aplicaciones.</p>
+                    <p class="card-text margin-custom">Exploremos el fascinante mundo de Python, un lenguaje de programación poderoso y fácil de usar. Descubrí por qué es tan popular entre los programadores y cómo facilita la creación de diversas aplicaciones.</p>
                     <a href="../views/que_es_python.html#top" class="card-link">Continuar leyendo ></a>
                 </div>
 
                 <!-- tarjeta bootstrap personalizada -->
-                <div class="card advert text-bg-light">
+                <div class="card advert text-bg-light mt-2">
                     <div class="card-header bg-py">
                         Próximamente!
                     </div>

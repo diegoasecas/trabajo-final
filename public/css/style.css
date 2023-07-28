@@ -97,6 +97,14 @@ footer a {
     }
 }
 
+form {
+    width: 70%;
+}
+
+label, input {display: block;}
+
+
+
 .container {
     background-color: white;
     width: 85%;
@@ -142,8 +150,8 @@ footer a {
 
 .carousel-indicators-custom [data-bs-target] {
     border-radius: 50%;
-    width: 0.75em;
-    height: 0.75em;
+    width: 0.65em;
+    height: 0.65em;
     margin-left: 0.65em;
     margin-right: 0.65em;
 }
@@ -227,6 +235,21 @@ footer a {
         grid-column: span 1;
     }
 } 
+
+.article-list {
+    font-size: smaller;
+}
+
+.descr {
+    padding-top: 0;
+}
+
+@media (max-width: 900px) {
+    .descr {
+        padding-left: 0;
+        padding-top: 0.5em;
+    }
+}
 
 .article-abstract {
     width: 55%;
@@ -370,3 +393,32 @@ footer a {
 .map-index {
     scroll-margin-top: 66px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.required:after {
+    color: red;
+    content:" *";
+    }
+
+#required-info {
+    color: red;
+    font-size: smaller;
+        /*text-align: right;*/
+    }
