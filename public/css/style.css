@@ -98,7 +98,7 @@ footer a {
 }
 
 form {
-    width: 70%;
+    width: 90%;
 }
 
 label, input {display: block;}
@@ -168,10 +168,6 @@ label, input {display: block;}
     transition-delay: 0s;
  }
 
-.carousel-custom {
-    text-shadow: 4px 4px 4px black;
- }
- 
 @media (min-width: 915px) {
     .carousel-custom {
         width: 850px;
@@ -179,6 +175,8 @@ label, input {display: block;}
         margin-right: auto;
     }
 }
+
+
 
 .card-custom {
     border-radius: 0;
@@ -193,7 +191,10 @@ label, input {display: block;}
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    text-shadow: 4px 4px 4px black;
+}
+
+.card-img-overlay-custom a:hover {
+    background-color: #198754;
 }
 
 @media (min-width: 915px) {
@@ -202,6 +203,15 @@ label, input {display: block;}
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.h1-custom {
+    padding-bottom: 0.25em;
+    border-bottom: 2px dotted white;
+}
+
+.width-custom {
+    width: 90%
 }
 
 .bloc-container {
@@ -266,6 +276,15 @@ label, input {display: block;}
     background-color: #DCEDE5;
     border: 0;
     
+}
+
+.blockquote-custom {
+    width: 90%;
+    background-color: #DCEDE5;
+    font-size:large;
+    border: 0;
+    margin: 1.5em;
+    padding: 1em;
 }
 
 .bg-py {
@@ -413,12 +432,12 @@ label, input {display: block;}
 
 
 .required:after {
-    color: red;
+    color: #bd2d70;
     content:" *";
     }
 
 #required-info {
-    color: red;
+    color: #bd2d70;
     font-size: smaller;
         /*text-align: right;*/
     }
