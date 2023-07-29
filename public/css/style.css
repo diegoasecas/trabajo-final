@@ -1,3 +1,6 @@
+/* todas las clases terminadas en "-custom" son clases que modifican el comportamiento
+de los elementos bootstrap utilizados */
+
 body {
     background-color: white;
 }
@@ -68,6 +71,7 @@ footer a {
     text-decoration: none;
 }
 
+/* muestra main/article y aside como principal y barra lateral en resoluciones mayores a 100px */ 
 @media (min-width: 1000px) {
     article,
     main {
@@ -80,6 +84,8 @@ footer a {
     }
 }
 
+/* muestra main/article y aside uno encima del otro, iframe ocupando la totalidad del
+elemento parent en resoluciones menores a 100px */ 
 @media (max-width: 1000px) {
     article,
     main,
@@ -103,8 +109,6 @@ form {
 
 label, input {display: block;}
 
-
-
 .container {
     background-color: white;
     width: 85%;
@@ -120,25 +124,20 @@ label, input {display: block;}
     }
 }
 
-.margin-custom {
-    margin-bottom: 0.5em;
-}
-
 .navbar-custom {
     padding-left: 3%;
     padding-right: 3%;
-}
-
-.card-big-custom a,
-.navbar-custom a:hover {
-    text-decoration: none;
-    color: white;
 }
 
 .brand-h1-custom,
 .brand-h1-custom a {
     font-size: x-large;
     margin: 0;
+}
+
+.navbar-custom a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 @media (min-width: 1000px) {
@@ -148,6 +147,7 @@ label, input {display: block;}
     }
 }
 
+/* personalización elementos bootstrap: efecto fade out indicadores carousel */
 .carousel-indicators-custom [data-bs-target] {
     border-radius: 50%;
     width: 0.65em;
@@ -167,6 +167,7 @@ label, input {display: block;}
     visibility: visible;
     transition-delay: 0s;
  }
+ /* fin efecto fade out en indicadores carousel */
 
 @media (min-width: 915px) {
     .carousel-custom {
@@ -176,7 +177,10 @@ label, input {display: block;}
     }
 }
 
-
+.card-big-custom a {
+    text-decoration: none;
+    color: white;
+}
 
 .card-custom {
     border-radius: 0;
@@ -193,12 +197,8 @@ label, input {display: block;}
     justify-content: flex-end;
 }
 
-.card-img-overlay-custom a:hover {
-    background-color: #198754;
-}
-
 @media (min-width: 915px) {
-    .card-img-main-custom {
+    .card-img-big-custom {
         width: 850px;
         margin-left: auto;
         margin-right: auto;
@@ -214,6 +214,7 @@ label, input {display: block;}
     width: 90%
 }
 
+/* contenedor grid responsive index */
 .bloc-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -265,6 +266,7 @@ label, input {display: block;}
     width: 55%;
     padding-right: 2em;
 }
+
 .article-map {
     width: 45%;
 }
@@ -275,24 +277,12 @@ label, input {display: block;}
     padding-right: 0.5em;
     background-color: #DCEDE5;
     border: 0;
-    
 }
 
-.blockquote-custom {
-    width: 90%;
-    background-color: #DCEDE5;
-    font-size:large;
-    border: 0;
-    margin: 1.5em;
-    padding: 1em;
+/* permite que la navbar no tape el título de la sección*/
+.map-index {
+    scroll-margin-top: 66px;
 }
-
-.bg-py {
-    background-color: #ceebd6;
-    font-weight: 500;
-}
-
-
 
 .media-container {
     padding: 0;
@@ -347,6 +337,16 @@ label, input {display: block;}
     }
 }
 
+.required:after {
+    color: #bd2d70;
+    content:" *";
+}
+
+#required-info {
+    color: #bd2d70;
+    font-size: smaller;
+}
+
 .pagination-custom {
     margin-top: 1em;
     margin-bottom: 1.5em;
@@ -368,12 +368,12 @@ label, input {display: block;}
 
 .pagination-custom > .active > a {
     color: white;
-    background-color: #198754; /* !Important */
-    border: solid 1px #198754; /* !Important */
+    background-color: #198754;
+    border: solid 1px #198754;
 }
 
 .pagination-custom > .active > a:hover {
-    background-color: #198754; /* !Important */
+    background-color: #198754;
     border: solid 1px #198754;
 }
 
@@ -385,6 +385,11 @@ label, input {display: block;}
 .advert {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+}
+
+.bg-py {
+    background-color: #ceebd6;
+    font-weight: 500;
 }
 
 .related {
@@ -408,36 +413,3 @@ label, input {display: block;}
 .signature > p > a:hover {
     color: #43ac5d;   
 }
-
-.map-index {
-    scroll-margin-top: 66px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.required:after {
-    color: #bd2d70;
-    content:" *";
-    }
-
-#required-info {
-    color: #bd2d70;
-    font-size: smaller;
-        /*text-align: right;*/
-    }
