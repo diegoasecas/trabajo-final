@@ -170,7 +170,6 @@ label, input {display: block;}
     }
 }
 
-
 .card-big-custom a {
     text-decoration: none;
     color: white;
@@ -200,12 +199,9 @@ label, input {display: block;}
 }
 
 .h1-custom {
-    padding-bottom: 0.25em;
+    /*font-weight:500;*/
+    padding-bottom: 0.35em;
     border-bottom: 2px dotted white;
-}
-
-.width-custom {
-    width: 90%
 }
 
 /* contenedor grid responsive index */
