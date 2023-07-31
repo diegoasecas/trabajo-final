@@ -199,10 +199,18 @@ label, input {display: block;}
 }
 
 .h1-custom {
-    /*font-weight:500;*/
+    font-weight: 600;
     padding-bottom: 0.35em;
-    border-bottom: 2px dotted white;
+    border-bottom: 1px dotted white;
 }
+
+
+@media (max-width: 768px) {
+    .h1-custom {
+        margin-bottom: 0;
+    }    
+}
+
 
 /* contenedor grid responsive index */
 .bloc-container {
