@@ -177,6 +177,26 @@ label, input {display: block;}
     }
 }
 
+.carousel-transp {
+    position: relative;
+    background-color: rgba(0, 0, 0);
+    z-index: 9999999;
+}
+
+@media (min-width: 915px) {
+    .carousel-transp {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-caption-custom {
+        font-size: smaller;
+    }
+}
+
 .card-big-custom a {
     text-decoration: none;
     color: white;
@@ -274,7 +294,6 @@ label, input {display: block;}
 .article-map-bg {
     padding: 1em;
     padding-bottom: 0.5em;
-    padding-right: 0.5em;
     background-color: #DCEDE5;
     border: 0;
 }
