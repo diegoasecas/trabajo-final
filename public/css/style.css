@@ -319,7 +319,7 @@ label, input {display: block;}
 }
 
 .code {
-    font-family: Consolas,'Lucida Console', 'Courier New', monospace;
+    font-family: Consolas, 'Roboto Mono', 'Lucida Console', 'Courier New', monospace;
     font-size: smaller;
     background-color: #7ce0b1;
     padding: 3px;
@@ -327,7 +327,7 @@ label, input {display: block;}
 
 .code-block {
     padding: 1em;
-    font-family: Consolas,'Lucida Console', 'Courier New', monospace;
+    font-family: Consolas, 'Roboto Mono', 'Lucida Console', 'Courier New', monospace;
     font-size: smaller;
     background-color: #DCEDE5;
     white-space: pre-line;
