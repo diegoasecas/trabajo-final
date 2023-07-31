@@ -148,17 +148,10 @@ label, input {display: block;}
 }
 
 /* personalización elementos bootstrap: efecto fade out indicadores carousel */
-.carousel-indicators-custom [data-bs-target] {
-    border-radius: 50%;
-    width: 0.65em;
-    height: 0.65em;
-    margin-left: 0.65em;
-    margin-right: 0.65em;
-}
 
 .carousel-indicators-custom {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0.25;
+    visibility: visible;
     transition: opacity 0.5s, visibility 0s 0.5s;
  }
 
@@ -177,25 +170,6 @@ label, input {display: block;}
     }
 }
 
-.carousel-transp {
-    position: relative;
-    background-color: rgba(0, 0, 0);
-    z-index: 9999999;
-}
-
-@media (min-width: 915px) {
-    .carousel-transp {
-        width: 850px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width: 600px) {
-    .carousel-caption-custom {
-        font-size: smaller;
-    }
-}
 
 .card-big-custom a {
     text-decoration: none;
